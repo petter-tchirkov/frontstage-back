@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const app = express( );
 const authRouter = require('./authRouter')
 
+
 app.use(express.json());
 app.use('/auth', authRouter)
 const start = async () => {
